@@ -1,0 +1,26 @@
+nav {
+    background-color: #FFFFCC;
+    padding: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.company-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.links{
+    display: flex;
+    gap: 10px;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+}
+
+.logoItem{
+    height: 20px;
+}
