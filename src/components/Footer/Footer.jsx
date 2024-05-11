@@ -2,7 +2,7 @@ import "./Footer.css"
 
 export const Footer = () => {
     return (
-        <div className="footer">
+        <div className="footer mt-auto">
           <div className="footer-content">
             <p>© 2024 Nombre de la Empresa. Todos los derechos reservados.</p>
             <p>Términos y condiciones</p>
