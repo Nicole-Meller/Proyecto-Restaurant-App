@@ -2,7 +2,6 @@ import { useState } from "react"
 import { collection, addDoc } from 'firebase/firestore'
 import { db } from '../../config/firebase.config' 
 import { useNavigate } from 'react-router-dom'
-
 import { Form } from "../Form/Form"
 
 export const CreateForm = () => {
@@ -11,13 +10,13 @@ export const CreateForm = () => {
     const [ apellidos, setApellidos ] = useState('')
     const [ email, setEmail ] = useState('')
     const [ phone, setPhone ] =  useState('')
-    const [ menu, setMenu ] = useState(0)
+    const [ menu, setMenu ] = useState('')
     const [ datetime, setDatetime ] = useState('')
     const [ number, setNumber ] = useState('')
 
-    const navigate = useNavigate()
+   
 
-    const clientsCollectionReference = collection(db, 'reservas')
+    const clientsCollectionReference = collection(db,'reservas')
 
     const onSubmit = async (event) => {
         event.preventDefault()
@@ -25,15 +24,13 @@ export const CreateForm = () => {
             names,
             apellidos,
             email,
-            RUT,
             phone,
             menu,
             datetime,
-            number,
-            status: false
+            number
         }
         await addDoc( clientsCollectionReference, client)
-        navigate('/')
+       
     }
 
     
@@ -42,8 +39,6 @@ export const CreateForm = () => {
         <div className="container">
             <div className="row">
                 <div className="col">
-                    <h2>Create New User</h2>
-
                     <Form 
                         handleSubmit={onSubmit}
                         names={names}
@@ -61,7 +56,6 @@ export const CreateForm = () => {
                         number={number}
                         setNumber={setNumber}
                         button='Crear reservación'
-                    
                     />
                 </div>
             </div>

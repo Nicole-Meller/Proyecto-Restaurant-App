@@ -90,7 +90,7 @@ return(
         </div>
         <div className="w-full px-3 sm:w-1/2">
             <div className="mb-5">
-                <input type="text" 
+                <input type="number" 
                 value={number}
                 onChange={(event) => setNumber(event.target.value)}
                 placeholder="Cantidad asistentes"

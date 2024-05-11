@@ -41,12 +41,13 @@ export const ClientRegister = () =>{
                 
                 <tr key={clients.id}>
                     <td>{client.id}</td>
-                    <td>{client.nombres}</td>
+                    <td>{client.names}</td>
                     <td>{client.apellidos}</td>
-                    <td>{client.correo}</td>
-                    <td>{client.numero}</td>
+                    <td>{client.email}</td>
+                    <td>{client.phone}</td>
                     <td>{client.menu}</td>
-                    <td>{client.cantidad}</td>
+                    <td>{client.number}</td>
+                    <td>{client.datetime}</td>
                 </tr>
                 
             ))}
