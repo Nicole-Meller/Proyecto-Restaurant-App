@@ -23,7 +23,7 @@ const Card = () => {
         <figure className='relative mb-2 w-1/2 h-110 rounded-lg cursor-pointer'>
           <img
             className='mx-auto w-full h-full object-cover rounded-lg'
-            src='https://i.ibb.co/ckmGkHt/menuUno.png'
+            src='../public/img/menu.jpg'
             alt='menuUno'
             onClick={() => enlargeImage('https://i.ibb.co/ckmGkHt/menuUno.png')}
           />
@@ -35,7 +35,7 @@ const Card = () => {
         <figure className='relative mb-2 w-1/2 h-110 rounded-lg cursor-pointer'>
           <img
             className=' mx-auto w-full h-full object-cover rounded-lg'
-            src='https://i.ibb.co/yf4v7Bw/menuDos.png'
+            src='..public/img/menu.jpg'
             alt='menuDos'
             onClick={() => enlargeImage('https://i.ibb.co/yf4v7Bw/menuDos.png')}
           />
