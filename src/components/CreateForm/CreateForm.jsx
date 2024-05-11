@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { collection, addDoc } from 'firebase/firestore'
 import { db } from '../../config/firebase.config' 
-import { Form } from "../Form/Form"
+import { Form } from "../Formu/Formu"
 
 export const CreateForm = () => {
 
