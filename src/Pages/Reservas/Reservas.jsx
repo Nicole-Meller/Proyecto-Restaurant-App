@@ -1,12 +1,12 @@
+import { ClientRegister } from "../../components/ClientRegister/ClientRegister";
+import { CreateForm } from "../../components/CreateForm/CreateForm";
+import {Layout} from '../../components/Layout/Layout'
 
-
-function Reservas() {
+export function Reservas() {
 
     return (
-      <div>
-        Reservas
-      </div>
+      <Layout>
+        <ClientRegister/>
+      </Layout>
     )
   }
-
-  export default Reservas;

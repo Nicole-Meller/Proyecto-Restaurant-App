@@ -1,7 +1,7 @@
 import { TitleMenu } from '../../components/TitleMenu/TitleMenu';
-import Layout from '../../components/Layout/Layout'
+import { Layout } from '../../components/Layout/Layout';
 
-function Home() {
+export function Home() {
 
     return (
       <Layout>
@@ -13,5 +13,3 @@ function Home() {
       </Layout>
     )
   }
-
-  export default Home;

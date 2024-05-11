@@ -1,17 +1,15 @@
-import Layout from '../../components/Layout/Layout'
+import { Layout } from '../../components/Layout/Layout';
 import Card from '../../components/Card/Card'
-import { Form } from '../../components/Form/form';
 import { TitleMenu } from '../../components/TitleMenu/TitleMenu';
+import { CreateForm } from '../../components/CreateForm/CreateForm';
 
-function Menu() {
+export function Menu() {
 
     return (
       <Layout>
         <TitleMenu/>
         <Card/>
-        <Form/>
+        <CreateForm/>
       </Layout>
     )
   }
-
-  export default Menu;
