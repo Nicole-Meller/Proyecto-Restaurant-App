@@ -2,6 +2,7 @@ import { useState } from "react"
 import { collection, addDoc } from 'firebase/firestore'
 import { db } from '../../config/firebase.config' 
 import { Form } from "../Formu/Formu"
+import Swal from 'sweetalert2';
 
 export const CreateForm = () => {
 
@@ -13,12 +14,19 @@ export const CreateForm = () => {
     const [ datetime, setDatetime ] = useState('')
     const [ number, setNumber ] = useState('')
 
-   
-
     const clientsCollectionReference = collection(db,'reservas')
 
     const onSubmit = async (event) => {
-        event.preventDefault()
+        event.preventDefault();
+        if (!names || !apellidos || !email || !phone || !menu || !datetime || !number) {
+            Swal.fire({
+                icon: 'error',
+                title: '¡Ups!',
+                text: 'Por favor, completa todos los campos antes de enviar el formulario.',
+                confirmButtonText: 'Aceptar'
+            });
+            return;
+        }
         const client = {
             names,
             apellidos,
@@ -27,10 +35,33 @@ export const CreateForm = () => {
             menu,
             datetime,
             number
+        };
+        try {
+            await addDoc(clientsCollectionReference, client);
+            Swal.fire({
+                icon: 'success',
+                title: '¡Datos guardados correctamente!',
+                text:'Se ha enviado su código de reserva a su correo',
+                showConfirmButton: false,
+                timer: 1500
+            });
+            setNames('');
+            setApellidos('');
+            setEmail('');
+            setPhone('');
+            setMenu('');
+            setDatetime('');
+            setNumber('');
+        } catch (error) {
+            console.error('Error al guardar los datos:', error);
+            Swal.fire({
+                icon: 'error',
+                title: '¡Ups! Algo salió mal.',
+                text: 'No se pudieron guardar los datos. Por favor, inténtalo de nuevo.',
+                confirmButtonText: 'Aceptar'
+            });
         }
-        await addDoc( clientsCollectionReference, client)
-       
-    }
+    };
 
     
     return (

@@ -10,7 +10,7 @@ const activeStyle = 'underline decoration-1'
         <ul className='flex items-center gap-3'>
           <li className='text-center'>
             
-            <span>
+            <span className='font-bold'>
               <p>MANTEL ROJO</p>
             </span>
           </li>

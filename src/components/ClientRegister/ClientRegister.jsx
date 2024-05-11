@@ -22,21 +22,21 @@ export const ClientRegister = () =>{
     }, [])
 
     return(
-    <div className="overflow-x-auto">
-        <table className="table-fixed w-full">
+    <div className="overflow-x-auto max-w-full">
+        <table className="border-separate border-spacing-2">
             <thead>
                 <tr className="bg-gray-200">
-                    <th className="w-1/8 py-2 hidden sm:table-cell">Código</th>
-                    <th className="w-1/8 py-2">Nombre Cliente</th>
-                    <th className="w-1/8 py-2">Apellido Cliente</th>
-                    <th className="w-1/8 py-2">Correo de contacto</th>
-                    <th className="w-1/8 py-2">Número de contacto</th>
-                    <th className="w-1/8 py-2">Menú seleccionado</th>
-                    <th className="w-1/8 py-2">Cantidad Asistentes</th>
-                    <th className="w-1/8 py-2">Fecha de reserva</th>
+                    <th className="py-2 border hidden sm:table-cell">Código</th>
+                    <th className="py-2 border">Nombre Cliente</th>
+                    <th className="py-2 border">Apellido Cliente</th>
+                    <th className="py-2 border">Correo de contacto</th>
+                    <th className="py-2 border">Número de contacto</th>
+                    <th className="py-2 border">Menú seleccionado</th>
+                    <th className="py-2 border">Cantidad Asistentes</th>
+                    <th className="py-2 border">Fecha de reserva</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody className="overflow-y-scroll">
             {
             clients.map(client => (
                 

@@ -3,7 +3,7 @@ export const Form = ({handleSubmit,names,setNames,apellidos,setApellidos,phone,s
         <div className="flex items-center justify-center p-12">
         <div className="mx-auto w-full max-w-[550px] bg-white">
             <form onSubmit={handleSubmit}>
-            <label className="mb-5 block text-base font-semibold text-[#07074D] sm:text-xl">Información personal de reserva</label>
+            <label className="mb-5 block text-base font-semibold text-[#07074D] sm:text-xl text-center">Ingresa tus datos personales para completar la reserva:</label>
                 <div className="-mx-3 flex flex-wrap">
                     <div className="w-full px-3 sm:w-1/2">
                         <div className="mb-5">
@@ -80,9 +80,9 @@ export const Form = ({handleSubmit,names,setNames,apellidos,setApellidos,phone,s
                             onChange={(event) => setMenu(event.target.value)}
                             className="w-full rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm">
                                 <option value="" className="font-semibold text-slate-300">Seleccione menú</option>
-                                <option value="menuUno">Menu Uno</option>
-                                <option value="menuDos">Menu Dos</option>
-                                <option value="menuTres">Menu Tres</option>
+                                <option value="menuUno">Menu uno</option>
+                                <option value="menuDos">Menu dos</option>
+                                <option value="menuTres">Menu tres</option>
                             </select>
                         </div>
                     </div>
