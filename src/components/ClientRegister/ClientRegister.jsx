@@ -22,10 +22,11 @@ export const ClientRegister = () =>{
     }, [])
 
     return(
+    <div className="overflow-x-auto">
         <table className="table-fixed w-full">
             <thead>
                 <tr className="bg-gray-200">
-                    <th className="w-1/8 py-2">Código de reserva</th>
+                    <th className="w-1/8 py-2 hidden sm:table-cell">Código</th>
                     <th className="w-1/8 py-2">Nombre Cliente</th>
                     <th className="w-1/8 py-2">Apellido Cliente</th>
                     <th className="w-1/8 py-2">Correo de contacto</th>
@@ -40,7 +41,7 @@ export const ClientRegister = () =>{
             clients.map(client => (
                 
                 <tr key={clients.id} className="border-b border-gray-200">
-                    <td className="py-2 text-center">{client.id}</td>
+                    <td className="py-2 text-center hidden sm:table-cell">{client.id}</td>
                     <td className="py-2 text-center">{client.names}</td>
                     <td className="py-2 text-center">{client.apellidos}</td>
                     <td className="py-2 text-center">{client.email}</td>
@@ -52,5 +53,6 @@ export const ClientRegister = () =>{
             ))}
             </tbody>
         </table>
+    </div>
     );
 }
