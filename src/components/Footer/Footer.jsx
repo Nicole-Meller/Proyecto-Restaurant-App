@@ -7,9 +7,9 @@ export const Footer = () => {
       <div className="footer-content flex justify-between items-center">
           <p>© 2024 MANTEL ROJO</p>
           <p>Todos los derechos reservados.</p>
+          <p>Términos y condiciones</p>
           <div className="flex gap-3">
-              <p>Términos y condiciones</p>
-              <div className="social-links">
+             <div className="social-links">
                   <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i></a>
                   <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
                   <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>

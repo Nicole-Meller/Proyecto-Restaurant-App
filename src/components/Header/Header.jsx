@@ -9,23 +9,17 @@ const activeStyle = 'underline decoration-1'
     return (
       <nav className='flex justify-between items-center fixed z-10 top-0 w-full py-5 px-11 text-md font-light'>
         <ul className='flex items-center gap-3'>
-          <li className='text-center'>
-            
-            <span className='font-bold'>
-              <p>MANTEL ROJO</p>
-            </span>
-          </li>
-          <li className='font-semibold'>
+          <li className='mantel font-bold text-center'>
             <NavLink to='/'
             className={({isActive}) => 
             isActive ? activeStyle : undefined
             }>
-              Home
+              <p>MANTEL ROJO</p>
             </NavLink>
           </li>
         </ul>
         <ul className='flex items-center gap-3'>
-          <li>
+          <li className='mr-4'>
             <NavLink to='/menu'
             className={({isActive}) => 
             isActive ? activeStyle : undefined
@@ -33,7 +27,7 @@ const activeStyle = 'underline decoration-1'
               Menu
             </NavLink>
           </li>
-          <li>
+          <li className='mr-4'>
             <NavLink to='/reservas'
             className={({isActive}) => 
             isActive ? activeStyle : undefined
