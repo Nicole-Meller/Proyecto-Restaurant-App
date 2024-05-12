@@ -1,7 +1,7 @@
 import {Route, Routes} from 'react-router-dom'
-import {Home} from '../src/Pages/Home/Home'
-import {Menu} from '../src/Pages/Menu/Menu'
-import {Reservas} from '../src/Pages/Reservas/Reservas'
+import { Home } from '../src/Pages/Home/Home'
+import { Reservas } from '../src/Pages/Reservas/Reservas'
+import { Menu } from '../src/Pages/Menu/Menu'
 import React from 'react';
 
 
