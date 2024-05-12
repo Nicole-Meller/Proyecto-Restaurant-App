@@ -1,9 +1,10 @@
 import { BrowserRouter} from 'react-router-dom'
-import { Header } from '../components/Header/Header'
-import { Footer } from '../components/Footer/Footer'
-import { RouterApp } from '../../routes/RouterApps'
+import React from 'react';
+import { Header } from './components/Header/Header'
+import { Footer } from './components/Footer/Footer'
+import { RouterApp } from '../routes/RouterApps'
 import './App.css'
-import { Layout } from '../components/Layout/Layout'
+import { Layout } from './components/Layout/Layout'
 
 export const App = () => {
   

@@ -1,5 +1,5 @@
 
-
+import React from 'react';
 import { InfoHome } from '../../components/InfoHome/InfoHome';
 import { Layout } from '../../components/Layout/Layout';
 

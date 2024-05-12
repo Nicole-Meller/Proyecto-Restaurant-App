@@ -1,6 +1,7 @@
 import { useEffect, useState  } from "react";
 import { collection, getDocs } from 'firebase/firestore'
 import { db } from '../../config/firebase.config'
+import React from 'react';
 
 export const ClientRegister = () =>{
 
@@ -14,7 +15,6 @@ export const ClientRegister = () =>{
             data.docs.map((doc) => ({...doc.data(), id: doc.id}))
             
         )
-        console.log(clients)
     }
 
     useEffect(() => {
@@ -37,20 +37,20 @@ export const ClientRegister = () =>{
                 </tr>
             </thead>
             <tbody className="overflow-y-scroll">
-            {
-            clients.map(client => (
-                
-                <tr key={clients.id} className="border-b border-gray-200">
-                    <td className="py-2 text-center hidden sm:table-cell">{client.id}</td>
-                    <td className="py-2 text-center">{client.names}</td>
-                    <td className="py-2 text-center">{client.apellidos}</td>
-                    <td className="py-2 text-center">{client.email}</td>
-                    <td className="py-2 text-center">{client.phone}</td>
-                    <td className="py-2 text-center">{client.menu}</td>
-                    <td className="py-2 text-center">{client.number}</td>
-                    <td className="py-2 text-center">{client.datetime}</td>
-                </tr>
-            ))}
+                {
+                    clients.map(client => (
+                        <tr key={client.id} className="border-b border-gray-200">
+                            <td className="py-2 text-center hidden sm:table-cell">{client.id}</td>
+                            <td className="py-2 text-center">{client.names}</td>
+                            <td className="py-2 text-center">{client.apellidos}</td>
+                            <td className="py-2 text-center">{client.email}</td>
+                            <td className="py-2 text-center">{client.phone}</td>
+                            <td className="py-2 text-center">{client.menu}</td>
+                            <td className="py-2 text-center">{client.number}</td>
+                            <td className="py-2 text-center">{client.datetime}</td>
+                        </tr>
+                    ))
+                }
             </tbody>
         </table>
     </div>

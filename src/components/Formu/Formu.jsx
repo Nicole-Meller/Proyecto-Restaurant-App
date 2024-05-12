@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const Form = ({handleSubmit,names,setNames,apellidos,setApellidos,phone,setPhone,email,setEmail,datetime,setDatetime,menu,setMenu,number,setNumber,button}) => {
     return(
         <div className="flex items-center justify-center p-12">
@@ -7,7 +9,7 @@ export const Form = ({handleSubmit,names,setNames,apellidos,setApellidos,phone,s
                 <div className="-mx-3 flex flex-wrap">
                     <div className="w-full px-3 sm:w-1/2">
                         <div className="mb-5">
-                            <label for="name" className="mb-3 block text-base font-medium text-[#07074D]">
+                            <label htmlFor="name" className="mb-3 block text-base font-medium text-[#07074D]">
                                 Nombres
                             </label>
                             <input type="text" value={names}
@@ -18,7 +20,7 @@ export const Form = ({handleSubmit,names,setNames,apellidos,setApellidos,phone,s
                     </div>
                     <div className="w-full px-3 sm:w-1/2">
                         <div className="mb-5">
-                            <label for="name" className="mb-3 block text-base font-medium text-[#07074D]">
+                            <label htmlFor="name" className="mb-3 block text-base font-medium text-[#07074D]">
                                 Apellidos
                             </label>
                             <input type="text" value={apellidos}
@@ -31,7 +33,7 @@ export const Form = ({handleSubmit,names,setNames,apellidos,setApellidos,phone,s
                 <div className="-mx-3 flex flex-wrap">
                 <div className="w-full px-3 sm:w-1/1">
                         <div className="mb-5">
-                            <label for="email" className="mb-3 block text-base font-medium text-[#07074D]">
+                            <label htmlFor="email" className="mb-3 block text-base font-medium text-[#07074D]">
                                 Correo Electrónico
                             </label>
                             <input type="text" value={email}
@@ -44,7 +46,7 @@ export const Form = ({handleSubmit,names,setNames,apellidos,setApellidos,phone,s
                 <div className="-mx-3 flex flex-wrap">
                 <div className="w-full px-3 sm:w-1/2">
                         <div className="mb-5">
-                            <label for="phone" className="mb-3 block text-base font-medium text-[#07074D]">
+                            <label htmlFor="phone" className="mb-3 block text-base font-medium text-[#07074D]">
                                 Número de contacto
                             </label>
                             <input type="text" value={phone}
@@ -55,7 +57,7 @@ export const Form = ({handleSubmit,names,setNames,apellidos,setApellidos,phone,s
                     </div>
                     <div className="w-full px-3 sm:w-1/2">
                         <div className="mb-5">
-                            <label for="fechaHora" className="mb-3 block text-base font-medium text-[#07074D]">
+                            <label htmlFor="fechaHora" className="mb-3 block text-base font-medium text-[#07074D]">
                             Selecciona Fecha y Hora:
                             </label>
                             <input type="datetime-local" value={datetime}
@@ -71,7 +73,7 @@ export const Form = ({handleSubmit,names,setNames,apellidos,setApellidos,phone,s
                         <div className="w-full px-3 sm:w-1/2">
                 <div className="mb-5">
                     <div className="flex flex-wrap items-center">
-                        <label for="select" className="mb-3 block text-base font-medium text-[#07074D] sm:w-1/3">
+                        <label htmlFor="select" className="mb-3 block text-base font-medium text-[#07074D] sm:w-1/3">
                             Menú
                         </label>
                         <div className="w-full sm:w-2/3">

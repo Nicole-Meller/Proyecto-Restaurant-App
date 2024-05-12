@@ -3,6 +3,7 @@ import { collection, addDoc } from 'firebase/firestore'
 import { db } from '../../config/firebase.config' 
 import { Form } from "../Formu/Formu"
 import Swal from 'sweetalert2';
+import React from 'react';
 
 export const CreateForm = () => {
 
