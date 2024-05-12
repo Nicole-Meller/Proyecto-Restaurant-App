@@ -23,7 +23,7 @@ const Card = () => {
         <figure className='relative mb-2 w-1/2 h-110 rounded-lg cursor-pointer'>
           <img
             className='mx-auto w-full h-full object-cover rounded-lg'
-            src='../../../public/img/menuuno.avif'
+            src='../img/menuuno.avif'
             alt='menuUno'
             onClick={() => enlargeImage('../../../public/img/menuuno.avif')}
           />
@@ -35,7 +35,7 @@ const Card = () => {
         <figure className='relative mb-2 w-1/2 h-110 rounded-lg cursor-pointer'>
           <img
             className=' mx-auto w-full h-full object-cover rounded-lg'
-            src='../../../public/img/menudos.avif'
+            src='../img/menudos.avif'
             alt='menuDos'
             onClick={() => enlargeImage('../../../public/img/menudos.avif')}
           />
@@ -47,7 +47,7 @@ const Card = () => {
         <figure className='relative mb-2 w-1/2 h-110 rounded-lg cursor-pointer'>
           <img
             className='mx-auto w-full h-full object-cover rounded-lg'
-            src='../../../public/img/menutres.avif'
+            src='../img/menutres.avif'
             alt='menuTres'
             onClick={() => enlargeImage('../../../public/img/menutres.avif')}
           />
