@@ -20,18 +20,17 @@ Esta aplicación web te permite explorar tres menús diferentes y realizar reser
 
 # Estructura del Proyecto
 
-.
-├── public/                # Archivos públicos (favicon, etc.)
-├── src/                   # Carpeta principal de código fuente
-│   ├── components/        # Componentes reutilizables
-│   ├── pages/             # Páginas principales de la aplicación
-│   ├── config/            # Configuración con la base de datos de Firestore
-│   ├── App.css            # Estilos globales de la aplicación
-│   ├── App.js             # Componente principal de la aplicación
-│   └── index.js           # Punto de entrada de la aplicación
-├── .gitignore             # Archivos ignorados por git
-├── package.json           # Archivo de configuración de npm
-└── README.md              # Este archivo
+1. public/: Archivos públicos (favicon, etc.)
+2. src/: Carpeta principal de código fuente
++ components/: Componentes reutilizables
++ pages/: Páginas principales de la aplicación
++ config/: Configuración con la base de datos de Firestore
++ App.css: Estilos globales de la aplicación
++ App.js: Componente principal de la aplicación
++ index.js: Punto de entrada de la aplicación
+3. .gitignore: Archivos ignorados por git
+4. package.json: Archivo de configuración de npm
+5. README.md: Este archivo
 
 # Instalación y Uso
 
