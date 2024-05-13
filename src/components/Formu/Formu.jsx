@@ -94,7 +94,14 @@ export const Form = ({handleSubmit,names,setNames,apellidos,setApellidos,phone,s
                 <div className="mb-5">
                     <input type="number" 
                     value={number}
-                    onChange={(event) => setNumber(event.target.value)}
+                    onChange={(event) => {
+                        const inputValue = event.target.value;
+                        if (parseInt(inputValue) < 1 || isNaN(parseInt(inputValue))) {
+                            setNumber(1);
+                        } else {
+                            setNumber(inputValue);
+                        }
+                    }}
                     placeholder="Cantidad asistentes"
                     className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                 </div>
