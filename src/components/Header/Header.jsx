@@ -9,7 +9,7 @@ const activeStyle = 'underline decoration-1'
     return (
       <nav className='flex justify-between items-center fixed z-10 top-0 w-full py-5 px-11 text-md font-light'>
         <ul className='flex items-center gap-3'>
-          <li className='mantel font-bold text-center'>
+          <li className='font-bold text-center'>
             <NavLink to='/'
             className={({isActive}) => 
             isActive ? activeStyle : undefined
